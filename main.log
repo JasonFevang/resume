@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.22)  22 JUN 2022 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.22)  27 SEP 2022 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,22 +880,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 377--377
  []
 
 
+Overfull \hbox (9.77357pt too wide) in alignment at lines 388--388
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+
+ []
+
+
 Overfull \hbox (9.77357pt too wide) in alignment at lines 393--393
 [][] 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 393--393
-
- []
-
-
-Overfull \hbox (9.77357pt too wide) in alignment at lines 398--398
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--398
 
  []
 
@@ -910,26 +910,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--404
  []
 
 
-Overfull \hbox (9.77357pt too wide) in alignment at lines 414--414
+Overfull \hbox (9.77357pt too wide) in alignment at lines 413--413
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
 
  []
 
 
-Overfull \hbox (134.03741pt too wide) in paragraph at lines 422--423
+Overfull \hbox (134.03741pt too wide) in paragraph at lines 421--422
 [] [][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/sl' in size <10> not available
 
 (Font)              Font shape `T1/Raleway-TLF/m/it' tried instead on input lin
-e 436.
+e 435.
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 436.
+(Font)              scaled to size 10.0pt on input line 435.
 
 Package fancyhdr Warning: \headheight is too small (-5.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -947,7 +947,7 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
 Here is how much of TeX's memory you used:
  16565 strings out of 478238
  357036 string characters out of 5850456
- 663618 words of memory out of 5000000
+ 664618 words of memory out of 5000000
  34481 multiletter control sequences out of 15000+600000
  603818 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -958,7 +958,7 @@ c/dvips/raleway/a_yqxcf3.enc}</usr/share/texmf-dist/fonts/type1/impallari/ralew
 ay/Raleway-Bold.pfb></usr/share/texmf-dist/fonts/type1/impallari/raleway/Ralewa
 y-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 
-Output written on main.pdf (1 page, 58996 bytes).
+Output written on main.pdf (1 page, 58810 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream
