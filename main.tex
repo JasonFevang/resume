@@ -328,10 +328,10 @@
 %---------------------------------------------------------------------------------------
 %    META SECTION
 %----------------------------------------------------------------------------------------
-\metasection{Vancouver, Canada}{}
-\metasection{jasonfevang@gmail.com}{\textbf{Tech:} C++20, Python, FreeRTOS, ESP32, PWM} 
-\metasection{github.com/jasonfevang}{\textbf{Communication Protocols:} SPI, UART, I2C, DMX512}
-\metasection{604-401-4643}{}
+\metasection{Vancouver, Canada}{\textbf{Software:} C++11/20, Python, FreeRTOS}
+\metasection{jasonfevang@gmail.com}{\textbf{Hardware:} ESP32/8266, STM8, PWM}
+\metasection{github.com/jasonfevang}{\textbf{Protocols:} UART, SPI, I2C, UDP/HTTP (LwIP Sockets)}
+\metasection{604-401-4643}{\textbf{Tools:} Oscilloscopes, Logic Analyzers, Agentic AI, Unit Testing (Pytest/GTest)}
 \vspace{-2pt}
 \textcolor{softcol}{\hrule}
 \vspace{6pt}
@@ -357,23 +357,22 @@ I'm a computer engineering graduate with seven years of experience in systems-le
 \cvsection{Work Experience}
 
 \cvevent{2022 - Current (3.5 years)}{C++ Software Developer}{Safe Software}{
-    {Developed and maintained high-performance features for a cross-platform enterprise application using C++20, focusing on memory-efficient data processing and system reliability},
-    {Collaborated within a mature SDLC involving code reviews, CI/CD pipelines, and close coordination with QA to maintain software quality},
-    {Spearheaded an AI-augmented development workflow using agentic tools (Claude-Code, Copilot) and authored a suite of shell scripts to automate repetitive development tasks, increasing team velocity}
+    {Developed high-performance features for a cross-platform enterprise application using C++20, prioritizing memory safety, system reliability and protection against security vulnerabilities.},
+    {Managed the full software development lifecycle, including code reviews and CI/CD pipelines, while maintaining detailed documentation for all tasks to ensure technical clarity and traceability.},
+    {Spearheaded an AI-augmented development workflow using agentic tools (Claude-Code, Copilot) and authored a suite of shell scripts to automate repetitive development tasks, increasing team velocity.}
 }
 
 \cvevent{2019 - 2022 (3 years)}{Embedded Software Developer}{Better Way Lighting}{
-    {Collaborated with hardware engineers, designers, and stakeholders to develop firmware with real-time constraints for LED panels, DMX decoders, smart bulbs and more used on film sets globally, including Avatar 2 and Riverdale},
-    % {Introduced automated and manual testing to avoid regressions and improve software quality company-wide},
-    {Used hardware protocols such as SPI, I2C and UART to interface with sensors, displays, },
-    {Performed board bring-up using oscilloscopes, logic analyzers, multimeters and soldering irons},
-    {Implemented a dmx512 receiver and transmitter, },
-    {Oversaw work terms for four software co-op students, running interviews, performance reviews, mentorship and project management, leadership, }
+    {Led board bring-up for new hardware, validating and troubleshooting with oscilloscopes and logic analyzers.},
+    {Integrated hardware components including displays(SSD1306, ILI9341), sensors, and communication modules, utilizing UART, SPI, and I2C protocols.},
+    {Collaborated with electrical engineers and designers to develop firmware with real-time constraints for lighting products used in major film productions.},
+    {Oversaw work terms for four software co-op students performing interviews, performance reviews, mentorship and project management.}
 }
 
 %---------------------------------------------------------------------------------------
 %    PROJECTS SECTION
 %--------------------------------------------------------------------------------------
+\vspace{-10pt}
 \cvsection{Projects}
 
 % \cvevent{2025}{Python PDF Writer}{Safe Software}{
@@ -381,26 +380,24 @@ I'm a computer engineering graduate with seven years of experience in systems-le
 %     {Wrote 215 unit tests covering a broad feature-set including multi-column layouts, custom fonts, images, bullet points, watermarks and much more}
 % }
 
-\cvevent{2023}{Optimize GIS PointCloud Network Access}{Safe Software}{
-    {Built a high-performance C++ implementation of Cloud Optimized Point Cloud(\href{https://copc.io}{copc.io}), utilizing octree construction to spatially index datasets exceeding 1B+ points},
-    {Optimized remote dataset retrieval with HTTP/FTP range requests and over-fetching, avoiding full-file downloads}
+\cvevent{2025}{Optimize GIS PointCloud Network Access}{Safe Software}{
+    {Built a high-performance C++ implementation of Cloud Optimized Point Cloud(\href{https://copc.io}{copc.io}), using an octree to spatially index datasets upwards of 1B points.},
+    {Optimized remote datasets with HTTP/FTP range requests and over-fetching, avoiding full-file downloads.}
 }
 
-\cvevent{2023}{LimeLite LED Panel Firmware}{Better Way Lighting}{
-    {Architected a }
+\cvevent{2022}{LimeLite LED Panel Firmware}{Better Way Lighting}{
+    {Architected ESP32 firmware on FreeRTOS to handle real-time lighting data over UDP (sACN/Artnet), physical DMX512, and an external networking device via SPI(CRMX), using all custom libraries.},
+    {Implemented closed-loop thermal control with thermistors and PWM-driven fans, including ramp-up logic.},
+    % {Developed a responsive user interface, managed via FreeRTOS tasks to ensure high-performance UI interaction alongside background networking.},
+    {Engineered a high-fidelity LED driving system using variable PWM with gamma correction and look-up tables for color mixing and panel-specific calibration to achieve >95 CRI white light across the spectrum.}
 }
 
 \cvevent{2022}{STM8 Decoder Firmware and Bootloader}{Better Way Lighting}{
-    {Reverse-engineered and wrote custom firmware in C for six varieties of DMX512 decoders, with over 1000 devices programmed},
-    {Developed a custom bootloader and programmer (ESP32) to update decoders through the DMX input},
-    {Automated all configuration, build, and flashing tooling using makefiles and python scripts for development with the COSMIC STM8 Toolchain}
+    {Developed custom firmware in C for STM8 microcontrollers, implementing DMX512 receive via UART and driving character displays and LEDs through low-level GPIO and TIM timer peripherals.},
+    % {Reverse-engineered and wrote custom firmware in C for six varieties of DMX512 decoders, with over 1000 devices programmed},
+    {Wrote a custom bootloader and programmer (ESP32) supporting custom commands for field updates.}
+    % {Automated all configuration, build, and flashing tooling using makefiles and python scripts for development with the COSMIC STM8 Toolchain}
 }
-
-% \cvevent{2022}{CRMX 6Channel Wireless Decoder}{Better Way Lighting}{
-%     {},
-%     {},
-%     {}
-% }
 
 % \cvevent{2021}{C++ GUI Framework for Monochrome Displays}{Better Way Lighting}{
 %     {Designed and built CardsGUI, used by the development team to build GUI's now running on multiple product lines},
