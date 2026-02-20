@@ -266,7 +266,7 @@
     \foreach \desc in {#4}{
         $\cdot$ \desc\\[3pt]
     }
-    
+
 \vspace{3pt}
 }
 
@@ -301,13 +301,8 @@
 %============================================================================%
 \begin{document}
 
-
 %use our custom fancy header definitions
-\pagestyle{fancy}    
-
-
-
-
+\pagestyle{fancy}
 
 %----------------------------------------------------------------------------------------
 %    HEADER IMAGE
@@ -319,7 +314,6 @@
 %\end{flushright}
 %\end{figure}
 
-
 %---------------------------------------------------------------------------------------
 %    TITLE HEADLINE
 %----------------------------------------------------------------------------------------
@@ -329,10 +323,7 @@
     \small Software Engineer
 \end{center}
 
-
-
 \vspace{6pt}
-
 
 %---------------------------------------------------------------------------------------
 %    META SECTION
@@ -372,11 +363,12 @@ I'm a computer engineering graduate with seven years of experience in systems-le
 }
 
 \cvevent{2019 - 2022 (3 years)}{Embedded Software Developer}{Better Way Lighting}{
-    {Collaborated with hardware engineers, designers, and stakeholders to develop firmware for LED panels, DMX decoders, smart bulbs and more used on film sets globally, including Avatar 2 and Riverdale},
+    {Collaborated with hardware engineers, designers, and stakeholders to develop firmware with real-time constraints for LED panels, DMX decoders, smart bulbs and more used on film sets globally, including Avatar 2 and Riverdale},
     % {Introduced automated and manual testing to avoid regressions and improve software quality company-wide},
-    {Used hardware protocols such as SPI, I2C and UART to interface with hardware components},
+    {Used hardware protocols such as SPI, I2C and UART to interface with sensors, displays, },
+    {Performed board bring-up using oscilloscopes, logic analyzers, multimeters and soldering irons},
     {Implemented a dmx512 receiver and transmitter, },
-    {Oversaw work terms for four software co-op students, running interviews, performance reviews, mentorship and project management, leadership, },
+    {Oversaw work terms for four software co-op students, running interviews, performance reviews, mentorship and project management, leadership, }
 }
 
 %---------------------------------------------------------------------------------------
@@ -384,22 +376,19 @@ I'm a computer engineering graduate with seven years of experience in systems-le
 %--------------------------------------------------------------------------------------
 \cvsection{Projects}
 
-\cvevent{2025}{Python PDF Writer}{Safe Software}{
-    {Designed, implemented and \href{https://docs.safe.com/fme/html/FME-Form-Documentation/FME-ReadersWriters/pkg-documentpdf/Feature_Representation.htm}{documented} an output format extending FPDF2 for creating text-based PDF reports that has been downloaded 1300 times in its first nine months},
-    {Wrote 215 unit tests covering a broad feature-set including multi-column layouts, custom fonts, images, bullet points, watermarks and much more}
-}
-
-% \cvevent{2023}{Optimize GIS PointCloud Network Access}{Safe Software}{
-%     {Successfully implemented the Cloud Optimized Point Cloud specification(\href{https://copc.io}{copc.io}), resulting in 50\% faster read and 45\% faster write performance than open source in common scenarios},
-%     {Added support for range requests in HTTP and FTP}
+% \cvevent{2025}{Python PDF Writer}{Safe Software}{
+%     {Designed, implemented and \href{https://docs.safe.com/fme/html/FME-Form-Documentation/FME-ReadersWriters/pkg-documentpdf/Feature_Representation.htm}{documented} an output format extending FPDF2 for creating text-based PDF reports that has been downloaded 1300 times in its first nine months},
+%     {Wrote 215 unit tests covering a broad feature-set including multi-column layouts, custom fonts, images, bullet points, watermarks and much more}
 % }
 
-\cvevent{2023}{LED Panel Firmware}{Better Way Lighting}{
-    {Architected a },
-    {},
-    {}
+\cvevent{2023}{Optimize GIS PointCloud Network Access}{Safe Software}{
+    {Built a high-performance C++ implementation of Cloud Optimized Point Cloud(\href{https://copc.io}{copc.io}), utilizing octree construction to spatially index datasets exceeding 1B+ points},
+    {Optimized remote dataset retrieval with HTTP/FTP range requests and over-fetching, avoiding full-file downloads}
 }
 
+\cvevent{2023}{LimeLite LED Panel Firmware}{Better Way Lighting}{
+    {Architected a }
+}
 
 \cvevent{2022}{STM8 Decoder Firmware and Bootloader}{Better Way Lighting}{
     {Reverse-engineered and wrote custom firmware in C for six varieties of DMX512 decoders, with over 1000 devices programmed},
@@ -412,7 +401,6 @@ I'm a computer engineering graduate with seven years of experience in systems-le
 %     {},
 %     {}
 % }
-
 
 % \cvevent{2021}{C++ GUI Framework for Monochrome Displays}{Better Way Lighting}{
 %     {Designed and built CardsGUI, used by the development team to build GUI's now running on multiple product lines},
@@ -441,9 +429,6 @@ I'm a computer engineering graduate with seven years of experience in systems-le
 \null
 \vspace*{\fill}
 \hspace{-0.25\linewidth}\colorbox{white}{\makebox[1.5\linewidth][c]{\mystrut  \textnormal{\textcolor{sectcol}{jasonfevang@gmail.com} $\cdot$ \textcolor{sectcol}{github.com/jasonfevang}}}}
-
-
-
 
 %============================================================================%
 %
