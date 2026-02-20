@@ -385,14 +385,14 @@ I'm a computer engineering graduate with seven years of experience in systems-le
     {Optimized remote datasets with HTTP/FTP range requests and over-fetching, avoiding full-file downloads.}
 }
 
-\cvevent{2022}{LimeLite LED Panel Firmware}{Better Way Lighting}{
-    {Architected ESP32 firmware on FreeRTOS to handle real-time lighting data over UDP (sACN/Artnet), physical DMX512, and an external networking device via SPI(CRMX), using all custom libraries.},
+\cvevent{2022}{LimeLite LED Panel Firmware - \href{https://betterwaylighting.com/limelite}{link}}{Better Way Lighting}{
+    {Architected ESP32 firmware on FreeRTOS to handle real-time lighting data over UDP (\href{https://tsp.esta.org/tsp/documents/docs/E1-31-2016.pdf}{sACN}/\href{https://art-net.org.uk/downloads/art-net.pdf}{Art-Net}), physical DMX512, and an external networking device via SPI(\href{https://docs.lumenrad.io/timo/spi-interface/}{CRMX}), writing all libraries.},
     {Implemented closed-loop thermal control with thermistors and PWM-driven fans, including ramp-up logic.},
     % {Developed a responsive user interface, managed via FreeRTOS tasks to ensure high-performance UI interaction alongside background networking.},
     {Engineered a high-fidelity LED driving system using variable PWM with gamma correction and look-up tables for color mixing and panel-specific calibration to achieve >95 CRI white light across the spectrum.}
 }
 
-\cvevent{2022}{STM8 Decoder Firmware and Bootloader}{Better Way Lighting}{
+\cvevent{2022}{STM8 Decoder Firmware and Bootloader - \href{https://betterwaylighting.com/obd-decoder}{link}}{Better Way Lighting}{
     {Developed custom firmware in C for STM8 microcontrollers, implementing DMX512 receive via UART and driving character displays and LEDs through low-level GPIO and TIM timer peripherals.},
     % {Reverse-engineered and wrote custom firmware in C for six varieties of DMX512 decoders, with over 1000 devices programmed},
     {Wrote a custom bootloader and programmer (ESP32) supporting custom commands for field updates.}
