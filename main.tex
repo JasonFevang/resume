@@ -148,6 +148,9 @@
 %light background
 \definecolor{softcol}{RGB}{225,225,225}
 
+%link background
+\definecolor{linkcol}{RGB}{0,100,200} % A deeper, "link-standard" blue
+
 %----------------------------------------------------------------------------------------
 %    HYPERLINKS
 %----------------------------------------------------------------------------------------
@@ -155,12 +158,13 @@
 \usepackage{hyperref}        
 \hypersetup{
     colorlinks=true,
-    linkcolor=sectcol,
+    linkcolor=linkcol,
     filecolor=magenta,
-    urlcolor=sectcol,
+    urlcolor=linkcol,
     pdftitle={Jason Fevang Resume}
     }
 
+\newcommand{\uhref}[2]{\href{#1}{\underline{#2}}}
 
 %============================================================================%
 %
@@ -375,23 +379,23 @@ I'm a computer engineering graduate with seven years of work experience in embed
 \cvsection{Selected Projects}
 
 % \cvevent{2025}{Python PDF Writer}{Safe Software}{
-%     {Designed, implemented and \href{https://docs.safe.com/fme/html/FME-Form-Documentation/FME-ReadersWriters/pkg-documentpdf/Feature_Representation.htm}{documented} an output format extending FPDF2 for creating text-based PDF reports that has been downloaded 1300 times in its first nine months.},
+%     {Designed, implemented and \uhref{https://docs.safe.com/fme/html/FME-Form-Documentation/FME-ReadersWriters/pkg-documentpdf/Feature_Representation.htm}{documented} an output format extending FPDF2 for creating text-based PDF reports that has been downloaded 1300 times in its first nine months.},
 %     {Wrote 215 unit tests covering a broad feature-set including multi-column layouts, custom fonts, images, bullet points, watermarks and much more.}
 % }
 
 \cvevent{2025}{Optimize GIS PointCloud Network Access}{Safe Software}{
-    {Built a high-performance C++ implementation of Cloud Optimized Point Cloud (\href{https://copc.io}{copc.io}), using an octree to spatially index datasets upwards of 1B points.},
+    {Built a high-performance C++ implementation of Cloud Optimized Point Cloud (\uhref{https://copc.io}{copc.io}), using an octree to spatially index datasets upwards of 1B points.},
     {Optimized remote datasets with HTTP/FTP range requests and over-fetching, avoiding full-file downloads.}
 }
 
-\cvevent{2022}{LimeLite LED Panel Firmware - \href{https://betterwaylighting.com/limelite}{link}}{Better Way Lighting}{
-    {Architected ESP32 firmware on FreeRTOS to handle real-time lighting data over UDP (\href{https://tsp.esta.org/tsp/documents/docs/E1-31-2016.pdf}{sACN}/\href{https://art-net.org.uk/downloads/art-net.pdf}{Art-Net}), physical DMX512, and an external networking device via SPI (\href{https://docs.lumenrad.io/timo/spi-interface/}{CRMX}), writing all libraries.},
+\cvevent{2022}{LimeLite LED Panel Firmware - \uhref{https://betterwaylighting.com/limelite}{link}}{Better Way Lighting}{
+    {Architected ESP32 firmware on FreeRTOS to handle real-time lighting data over UDP (\uhref{https://tsp.esta.org/tsp/documents/docs/E1-31-2016.pdf}{sACN}/\uhref{https://art-net.org.uk/downloads/art-net.pdf}{Art-Net}), physical DMX512, and an external networking device via SPI (\uhref{https://docs.lumenrad.io/timo/spi-interface/}{CRMX}), writing all libraries.},
     {Implemented closed-loop thermal control with thermistors and PWM-driven fans, including ramp-up logic.},
     % {Developed a responsive user interface, managed via FreeRTOS tasks to ensure high-performance UI interaction alongside background networking.},
     {Engineered a high-fidelity LED driving system using variable PWM with gamma correction and look-up tables for color mixing and panel-specific calibration to achieve \textgreater 95 CRI white light across the spectrum.}
 }
 
-\cvevent{2022}{STM8 Decoder Firmware and Bootloader - \href{https://betterwaylighting.com/obd-decoder}{link}}{Better Way Lighting}{
+\cvevent{2022}{STM8 Decoder Firmware and Bootloader - \uhref{https://betterwaylighting.com/obd-decoder}{link}}{Better Way Lighting}{
     {Developed custom firmware in C for STM8 microcontrollers, implementing DMX512 receive via UART and driving character displays and LEDs through low-level GPIO and TIM timer peripherals.},
     % {Reverse-engineered and wrote custom firmware in C for six varieties of DMX512 decoders, with over 1000 devices programmed.},
     {Wrote a custom bootloader and programmer (ESP32) supporting custom commands for field updates.}
